@@ -10,5 +10,6 @@ public interface IUserService {
 	List<User> findAllUsers();
 	
 	User findById(int id);
-
+	
+	void deleteUserById(int id);
 }

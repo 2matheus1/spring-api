@@ -30,6 +30,9 @@ public class UserService implements IUserService {
 	
 	public User findById(int id) {
 		return userRepository.findById(id).stream().collect(Collectors.toList()).get(0);
-		
+	}
+	
+	public void deleteUserById(int id) {
+		userRepository.deleteById(id);
 	}
 }
